@@ -1,20 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Wetterapplikation</title>
-	<link rel="stylesheet" href="http//code.jquery.com/mobile/1.4.5/jqery.mobile-1.4.5.min.css"
-	
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.css" />
+	<script src="http://code.jquery.com/jquery-[version].min.js"></script>
+	<script src="http://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.js"></script>
 </head>
 
 <body>
-	<h1>Hallo Welt</h1>
-	<h2></h2>
-	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eum, quis. Animi porro alias incidunt aspernatur, rerum modi veniam facere cumque molestias debitis, blanditiis repellendus harum quibusdam doloribus numquam soluta!
-	</div>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>Willkommen Header</h1>
+			<div role="main">
+	    <a href="#" data-icon="gear" class="ui-btn-right">Options</a>
+	    <div data-role="navbar">
+	        <ul>
+	            <li><a href="#">One</a></li>
+	            <li><a href="#">Two</a></li>
+	            <li><a href="#">Three</a></li>
+	        </ul>
+	    </div><!-- /navbar -->
+	</div><!-- /header -->
 
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="script.js"></script>
 
+		<div role="main" class="ui-content">
+			<p>Page content goes here.</p>
+		</div><!-- /content -->
+		<div><img src="mobileFoto.jpg"></div>
+
+		<div data-role="footer">
+			<h4>Page Footer</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
 </body>
 </html>
