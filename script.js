@@ -6,7 +6,8 @@ $(document).ready(function() {
 	.done(function(data) {
 		console.log(data);
 		$('h1').text(data.currently.temperature); // macht einen Textaufruf, Selektor ist h1 im html. im Objekt data
-		
+		$('p').text(data.flags['metno-license']); //da hier ein minus verwendet wird kommen [] drum
+		console.log(data);
 	});
 
 });
