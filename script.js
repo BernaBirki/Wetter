@@ -19,7 +19,7 @@ $(document).ready(function() {
 					lang: 'de'
 				},
 				dataType: 'jsonp'
-			}).done function(data) {
+			}).done (function(data) {
 				console.log(data);
 
 			});
