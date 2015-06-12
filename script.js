@@ -34,7 +34,7 @@ $(document).ready(function() {
 				}
 			}).done (function(data){
 				console.log(data);
-				$('.address').text(data.results[0].address_components[0].long_name);
+				$('.address').text(data.results[0].address_components[0].formatted_address);
 			});
 		});
 	});
