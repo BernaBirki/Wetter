@@ -21,8 +21,8 @@ $(document).ready(function() {
 				dataType: 'jsonp'
 			}).done function(data) {
 				console.log(data);
-			}
 
+			});
 	});
 
 });
