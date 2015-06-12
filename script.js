@@ -22,7 +22,7 @@ $(document).ready(function() {
 			dataType: 'jsonp'
 		}).done (function(data) {
 			console.log(data);
-			$('.temp').text(data.currently.apparentTemperature+ '°C');
+			$('.temp').text(data.currently.temperature+ '°C');
 
 			//google geocoding
 			$.ajax({
@@ -34,7 +34,7 @@ $(document).ready(function() {
 				}
 			}).done (function(data){
 				console.log(data);
-				$('.address').text(data.results[0].address_components[1].formatted_address);
+				$('.address').text(data.results[0].formatted_address);
 			});
 		});
 	});
