@@ -12,7 +12,7 @@ $(document).ready(function() {
 			// $('.accuracy').text(position.coords.accuracy);
 
 			$.ajax({
-				url: 'https://api.forecast.io/forecast/f044c2cc88a6bb408f9d3092d6a19871/37.8267,-122.423' + koordinaten.latitude ',' + koordinaten.longitude
+				url: 'https://api.forecast.io/forecast/f044c2cc88a6bb408f9d3092d6a19871/37.8267,-122.423' + koordinaten.latitude ',' + koordinaten.longitude,
 				data: {
 
 					units:'si',
