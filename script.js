@@ -28,7 +28,7 @@ $(document).ready(function() {
 			$.ajax({
 				url:'https://maps.googleapis.com/maps/api/geocode/json',
 				data: {
-					latlng: koodinaten.latitude + ',' + koordinaten.longitude,
+					latlng: koordinaten.latitude + ',' + koordinaten.longitude,
 					key: 'AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8',
 					language: 'de'
 				}
