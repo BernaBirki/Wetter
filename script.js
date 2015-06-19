@@ -27,7 +27,7 @@ $(document).ready(function() {
 			},
 			dataType: 'jsonp'
 		}).done (function(data) {
-			console.log(data);
+			// console.log(data);
 			$('.temp').text(data.currently.temperature+ '°C');
 			skycons.set($('.js-icon')[0], data.currently.icon);
 
@@ -40,13 +40,13 @@ $(document).ready(function() {
 					language: 'de'
 				}
 			}).done (function(data){
-				console.log(data);
+				// console.log(data);
 				$('.address').text(data.results[0].formatted_address);
 			});
 		});
 	});
 
-	skycons.add($('.js-icon')[0], Skycons.RAIN);
+	skycons.add($('.js-icon')[0], Skycons.CLEAR_DAY);
 	skycons.play();
 
 	// setTimeout(function(){
