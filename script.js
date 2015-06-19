@@ -2,6 +2,11 @@ $(document).ready(function() {
 	navigator.geolocation.getCurrentPosition(function(position) {
 		//console.log(position);
 
+		var skycons = new Skycons({
+		color: "#bada55",
+		resizeClear: true
+		});
+
 		var koordinaten= {
 			longitude: position.coords.longitude,
 			latitude: position.coords.latitude
@@ -38,4 +43,15 @@ $(document).ready(function() {
 			});
 		});
 	});
+
+	skycons.add($('.js-icon')[0], Skycons.RAIN);
+
+	skycons.play();
+
+	setTimeout(function(){
+		skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
+	}, 5000);
+
+
+
 });
