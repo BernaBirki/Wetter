@@ -14,9 +14,9 @@ $(document).ready(function() {
 			latitude: position.coords.latitude
 		};
 
-		$('.longitude').text(position.coords.longitude);
-		$('.latitude').text(position.coords.latitude);
-		$('.accuracy').text(position.coords.accuracy);
+		// $('.longitude').text(position.coords.longitude);
+		// $('.latitude').text(position.coords.latitude);
+		// $('.accuracy').text(position.coords.accuracy);
 
 		$.ajax({
 			url: 'https://api.forecast.io/forecast/f044c2cc88a6bb408f9d3092d6a19871/' + koordinaten.latitude + ',' + koordinaten.longitude,
@@ -27,7 +27,6 @@ $(document).ready(function() {
 			},
 			dataType: 'jsonp'
 		}).done (function(data) {
-			// console.log(data);
 			$('.temp').text(data.currently.temperature+ '°C');
 			$('.temp').text(data.maximum.temperature+ '°C')
 			skycons.set($('.js-icon')[0], data.currently.icon);
@@ -41,7 +40,6 @@ $(document).ready(function() {
 					language: 'de'
 				}
 			}).done (function(data){
-				// console.log(data);
 				$('.address').text(data.results[0].formatted_address);
 			});
 		});
