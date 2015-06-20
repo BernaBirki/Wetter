@@ -12,14 +12,14 @@ h1 {
 	text-align: center;
 	height: 128px;
 	margin:auto;
-	margin-top: 20px;
+	padding: 20px;
 	font-size: 60px;
 	font-style: bold;
 	color: red;
 }
 
 canvas {
-	height: 128px;
+	height: 220px;
 	margin: auto;
 	display: block;
 }
