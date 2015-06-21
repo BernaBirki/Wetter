@@ -5,14 +5,18 @@
 h1 {
 	color: black;
 	text-align: center;
-	font-size: 35px;
+	font-size: 32px;
 }
 .temp {
-	text-align: center;
-	height: 128px;
+	height: 110px;
 	margin: auto;
-	padding: 20px;
 	font-size: 60px;
+	font-style: bold;
+	color: red;
+}
+.tempText {
+	margin: auto;
+	font-size: 24px;
 	font-style: bold;
 	color: red;
 }
@@ -20,4 +24,23 @@ canvas {
 	height: 220px;
 	margin: auto;
 	display: block;
+}
+.summary {
+	margin: 20px;
+	font-style: bold;
+	font-size: 36px;
+	color: blue;
+}
+.summaryText {
+	margin: auto;
+	color: blue;
+	font-size: 24px;
+}
+p {
+	font-size: 24px;
+}
+.tempMaxText .tempMax{
+	color: black;
+	height: 100px;
+	font-size: 24px;
 }

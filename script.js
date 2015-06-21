@@ -28,7 +28,8 @@ $(document).ready(function() {
 			dataType: 'jsonp'
 		}).done (function(data) {
 			$('.temp').text(data.currently.temperature+ '°C');
-			// $('.tempMax').text(data.apparentTemperature+ '°C')
+			$('.summary').text(data.currently.summary);
+			$('.tempMax').text(data.hourly.data[0].temperature+ '°C')
 			skycons.set($('.js-icon')[0], data.currently.icon);
 
 			//google geocoding
